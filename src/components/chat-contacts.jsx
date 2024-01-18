@@ -1,5 +1,5 @@
-import { Badge, Button, Table } from '@mantine/core'
 import { useEffect, useState } from 'react'
+import { Badge, Button, Table } from '@mantine/core'
 
 const API = 'https://chat-app-dualusv.azurewebsites.net/api'
 
