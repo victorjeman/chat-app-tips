@@ -1,12 +1,19 @@
-import { Button } from '@mantine/core'
+import { Button, Group } from '@mantine/core'
 
-export function ChatControls() {
+export function ChatControls({ showContacts }) {
   return (
-    <div>
+    <Group>
       <Button variant="outline" color="blue">
         Discussions
       </Button>
-      <Button variant="outline">New Chat</Button>
-    </div>
+
+      <Button
+        variant="outline"
+        onClick={() => {
+          showContacts(true)
+        }}>
+        Show contacts
+      </Button>
+    </Group>
   )
 }
