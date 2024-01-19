@@ -6,8 +6,9 @@ const API = 'https://chat-app-dualusv.azurewebsites.net/api'
 const CONTACTS_ENDPOINT = '/contacts'
 
 async function fetchContacts() {
-  const response = await fetch(`${API}${CONTACTS_ENDPOINT}`)
+  const response = await window.fetch(`${API}${CONTACTS_ENDPOINT}`)
   const data = await response.json()
+
   return data
 }
 
